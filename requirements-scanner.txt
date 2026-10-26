@@ -1,0 +1,7 @@
+# Requirements for PDF Arranger Hardware Scanner & SIFT Stitcher Extension
+opencv-python>=4.5.0
+numpy>=1.20.0
+pikepdf>=6.0.0
+PyMuPDF>=1.20.0
+comtypes>=1.2.0; platform_system=="Windows"
+requests>=2.25.0

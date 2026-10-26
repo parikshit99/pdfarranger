@@ -17,6 +17,19 @@ It’s a humble attempt to make the project a bit more active.
 
 For more info see [User Manual](https://github.com/pdfarranger/pdfarranger/wiki/User-Manual).
 
+### Integrated Hardware Scanner & SIFT Stitcher Extension
+
+This fork integrates physical hardware scanning and OpenCV SIFT stitching:
+- **Dual-Pass Stitching (`F7`)**: Scan top & bottom of oversized documents; computer vision automatically aligns, detects 180° upside-down rotation, and stitches seamlessly into your document.
+- **Single-Pass Scan (`F8`)**: Fast capture for standard A4/Letter pages directly into your PDF grid.
+- **Continuous ADF Batch Scanning**: Multi-page Automatic Document Feeder batch scanning with automatic multi-sheet pulls.
+- **Manual Stitching (`F9`)**: Select any two pages to stitch together into a single page.
+- **Non-Destructive Vector Crop & Reset (`C`)**: Adjust viewport without losing original scan rasters.
+- **Document Optimizer (`Ctrl+Alt+O`)**: Auto-deskew, auto-crop borders, and DPI/JPEG recompression.
+- **Dual Backend**: Supports both Wi-Fi Network eSCL (AirScan) and USB WIA 2.0 with mock isolation mode.
+
+See [doc/SCANNER_INTEGRATION.md](doc/SCANNER_INTEGRATION.md) for architecture and technical details.
+
 ![screenshot of PDF Arranger](https://github.com/pdfarranger/pdfarranger/raw/main/data/screenshot.png)
 
 ## Downloads

@@ -110,7 +110,8 @@ setup(
     description='A simple application for PDF Merging, Rearranging, and Splitting',
     url='https://github.com/pdfarranger/pdfarranger',
     license='GNU GPL-3',
-    packages=['pdfarranger'],
+    packages=['pdfarranger', 'pdfarranger.scanner'],
+    package_data={'pdfarranger.scanner': ['*.json']},
     data_files=data_files,
     zip_safe=False,
     cmdclass={
